@@ -1,0 +1,1328 @@
+*{
+    user-select: none;
+}
+a {
+    text-decoration: none;
+    color: #ffffff;
+    width: inherit;
+    height: inherit;
+    display: block;
+}
+
+body{
+    background-color: #ffffff;
+    color: #ffffff;
+}
+
+@media screen and (min-device-width:1300px){
+    #section_header {
+        width: 100%;
+        height: 80px;
+        position: fixed;
+        z-index: 999;
+        background-color: #ffffff;
+        border-bottom: 2px solid #000000;
+    }
+
+    #div_header {
+        background-color: #9d6b53;
+        width: 100%;
+        height: 80px;
+        margin-right: auto;
+        margin-left: auto;
+        box-sizing: border-box;
+    }
+
+    #logo img {
+        width: 150px;
+        height: 70px;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-top: 5px;
+        float: left;
+    }
+
+
+    #menu {
+        min-width: 630px;
+        width: auto;
+        height: 80px;
+        box-sizing: border-box;
+        margin-right: 100px;
+        float: left;
+        background-color: #9d6b53;
+        margin-left: 50px;
+    }
+
+    .itens_do_menu {
+        min-width: 50px;
+        width: auto;
+        height: 80px;
+        justify-content: center;
+        margin-left: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        box-sizing: border-box;
+        float: left;
+        font-size: 1.2em;
+        line-height: 1em;
+        text-align: center;
+    }
+
+    .itens_do_menu a {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+    }
+
+    .itens_do_menu:hover {
+        background-color: #edc4b3;
+    }
+
+    #div_menu_mobile {
+     display: none;   
+    }
+
+    #divs_login {
+        width: 360px;
+        height: 50px;
+        margin-top: 20px;
+        float: left;
+    }
+
+    #div_usuario {
+        width: 150px;
+        height: 50px;
+        float: left;
+    }
+
+    #div_senha {
+        width: 150px;
+        height: 50px;
+        margin-left: 10px;
+        float: left;
+    }
+
+    #usuario_nome_texto {
+        width: 150px;
+        height: 25px;
+        font-size: 1.2em;
+        line-height: 1.2em;
+    }
+
+    #senha_texto {
+        width: 150px;
+        height: 25px;
+        font-size: 1.2em;
+        line-height: 1.2em;
+    }
+
+    #usuario_campo, #usuario_campo input {
+        width: 100%;
+        height: 25px;
+        box-sizing: border-box;
+    }
+
+    #senha_campo, #senha_campo input {
+        width: 100%;
+        height: 25px;
+        box-sizing: border-box;
+    }
+
+    .div_button {
+        width: 35px;
+        height: 25px;
+        margin-top: 25px;
+        margin-left: 5px;
+        float: left;
+    }
+
+    .submit_button {
+        width: 35px;
+        height: 25px;
+    }
+
+    #div_conteudo_paginas {
+        width: 100%;
+        min-height: 200px;
+        height: auto;
+        box-sizing: border-box;
+        padding-top: 80px;
+        background-image: url(../imagens/texture.jpg);
+    }
+
+    #div_secao_de_conteudo {
+        width: 1200px;
+        min-height: 200px;
+        height: auto;
+        box-sizing: border-box;
+        overflow: hidden;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url(../imagens/texture.jpg);
+    }
+
+    #div_slider {
+        width: 1200px;
+        height: 400px;
+        box-sizing: border-box;
+        overflow: hidden;
+        border: 1px solid;
+    }
+
+    #div_imagens_slide {
+        display: flex;
+        width: 1200px;
+        height: 400px;
+        overflow: hidden;
+    }
+
+    .slider_imagens {
+        width: 1200px;
+        height: 400px;
+    }
+
+    #div_redes_sociais {
+        width: 50px;
+        height: 150px;
+        margin-left: 1205px;
+        box-sizing: border-box;
+        position: fixed;
+    }
+
+    .div_rede_social_imagem, .div_rede_social_imagem img {
+        width: 40px;
+        height: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+
+    #menu_lateral {
+        width: 150px;
+        min-height: 50px;
+        height: auto;
+        float: left;
+        color: #edc4b3;
+        background-color: black;
+    }
+
+    .itens_menu_lateral{
+        width: inherit;
+        height: 50px;
+        padding-top: 15px;
+        font-size: 1.2em;
+        line-height: 1.2em;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .itens_menu_lateral:hover {
+        background-color: #edc4b3;
+        color: #ffffff;
+    }
+
+    #div_produtos {
+        background-color: #9d6b53;
+        width: 1050px;
+        min-height: 600px;
+        height: auto;
+        box-sizing: border-box;
+        padding: 10px;
+        padding-top: 40px;
+        float: left;
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+
+    .produto_card{
+        background-color: #edc4b3;
+        width: 320px;
+        height: 470px;
+        float: left;
+        margin-right: 6px;
+        margin-bottom: 6px;
+        padding-bottom: 10px;
+        margin-left: 6px;
+        box-sizing: border-box;
+    }
+
+    .card_imagem, .produto_card img  {
+        width: 310px;
+        height: 240px;
+        margin-top: 3px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .produto_card img:hover{
+        border: solid 3px #7c1313;
+        cursor: pointer;
+    }
+
+    .produto_card img{
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+    }
+
+    .infos_card {
+        width: 100%;
+        height: 220px;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .texto_infos {
+        width: 100%;
+        height: 150px;
+        font-size: 1.2em;
+        line-height: 1.2em;
+    }
+
+    .detalhes_texto {
+        width: 100px;
+        height: 50px;
+        box-sizing: border-box;
+        margin-left: 210px;
+        padding-top: 15px;
+        font-size: 1.2em;
+        line-height: 1.2em;
+        text-align: center;
+    }
+
+    #div_sobre_conteudo {
+        width: 100%;
+        min-height: 200px;
+        height: auto;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+
+    .sobre_imagens, .sobre_imagens img {
+        width: 600px;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+
+    .sobre_titulos {
+        font-size: 2.4em;
+        font-weight: bold;
+        margin-bottom: 20px;
+        text-align: center;
+        background-color: #9d6b53;
+    }
+    .sobre_textos{
+        font-size: 1.5em;
+        background-color: #2f0606;
+        padding: 10px;
+        box-sizing: border-box;
+        box-shadow: 5px 5px 5px black;
+    }
+
+    .curiosidade_textos {
+        font-size: 1.8em;
+        margin-bottom: 10px;
+    }
+
+    #promocoes_h1{
+        text-align: center;
+        font-size: 2.0em;
+        margin-top: -70px;
+        margin-bottom: 30px;
+        box-shadow: 5px 5px 5px #000000;
+        background-color: #b42121;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+
+    #div_promocoes_conteudo{
+        width: 1200px;
+        min-height: 800px;
+        box-sizing: border-box;
+        overflow: hidden;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 100px;
+        background-color: #7c1313;
+    }
+
+    .produto_promocao_card {
+        width: 500px;
+        height: 460px;
+        margin-bottom: 30px;
+        box-sizing: border-box;
+        padding-left: 20px;
+        padding-right: 20px;
+        float: left;
+    }
+
+    .div_imagem_promocao, .div_imagem_promocao img {
+        width: 460px;
+        height: 280px;
+    }
+
+    .promocoes_infos {
+        width: 460px;
+        height: 180px;
+        box-sizing: border-box;
+        padding: 20px;
+        background-color: #000000;
+    }
+
+    .nome_produto_promocao {
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 2em;
+        font-weight: bold;
+    }
+
+    .preco_antigo {
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 1.8em;
+        font-weight: bold;
+        text-decoration: line-through;
+        color: #7c1313;
+    }
+
+    .preco_promocao {
+        text-align: center;
+        font-size: 1.8em;
+        font-weight: bold;
+        color: #2aa324;
+    }
+
+    #div_destaque {
+        width: 800px;
+        min-height: 400px;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    
+    #titulo_destaque{
+        font-size: 2.0em;
+        text-align: center;
+        margin-top: 10px;
+        background-color: #b42121;
+        padding: 6px;
+        box-sizing: border-box;
+    }
+
+    #div_destaque img {
+        width: 800px;
+        height: 500px;
+    }
+
+    #destaque_texto {
+        width: 1000px;
+        min-height: 100px;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #destaque_texto h1 {
+        font-size: 2.0em;
+        font-weight: bold;
+        margin-bottom: 25px;
+    }
+
+    #destaque_texto p {
+        font-size: 1.5em;
+        line-height: 1.3em;
+        margin-bottom: 20px;
+        background-color: #edc4b3;
+        padding: 6px;
+        box-sizing: border-box;
+    }
+
+    #div_curiosidades {
+        width: 1000px;
+        min-height: 100px;
+        box-sizing: border-box;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 50px;
+        padding-bottom: 25px;
+    }
+
+    #div_curiosidades h1 {
+        text-align: center;
+        font-size: 2.4em;
+        font-weight: bold;
+        margin-bottom: 50px;
+    }
+
+    #div_curiosidades h2 {
+        text-align: center;
+        font-size: 1.8em;
+        font-weight: bold;
+        margin-bottom: 25px;
+    }
+
+    #div_curiosidades p {
+        font-size: 1.3em;
+        line-height: 1.2em;
+        margin-bottom: 20px;
+    }
+
+    .imagens_curiosidades {
+        width: 500px;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 25px;
+    }
+
+    .imagens_curiosidades img {
+        width: 500px;
+        height: 300px;
+    }
+
+    #div_lojas {
+        width: 1200px;
+        min-height: 200px;
+        height: auto;
+        box-sizing: border-box;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 50px;
+    }
+
+    #div_lojas h1 {
+        font-size: 2.2em;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 30px;
+        color: #ffffff;
+        text-shadow: 5px 10px 5px #7c1313;
+    }
+
+    .lojas_card {
+        min-width: 1000px;
+        width: auto;
+        height: 340px;
+        box-sizing: border-box;
+        padding: 20px;
+        margin-bottom: 30px;
+        box-shadow: 5px 10px 5px #7c1313;
+        background-color: #9d6b53;
+    }
+
+    .infos_loja {
+        min-width: 580px;
+        width: auto;
+        height: 300px;
+        float: left;
+        background-color: #2f0606;
+        padding: 8px;
+        box-sizing: border-box;
+    }
+
+    .loja_nome {
+        font-size: 1.6em;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .loja_endereco {
+        font-size: 1.6em;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .loja_texto {
+        font-size: 1.3em;
+        line-height: 1em;
+        margin-left: 10px;
+        width: 540px;
+        background-color: #9d6b53;
+        padding: 5px;
+        box-sizing: border-box;
+        text-align: justify
+    }
+
+    .div_imagem_loja {
+        width: 480px;
+        height: 300px;
+        box-sizing: border-box;
+        padding-left: 20px;
+        float: left;
+    }
+
+    .div_imagem_loja img {
+        width: 480px;
+        height: 300px;
+    }
+
+    #div_form {
+        width: 100%;
+        min-height: 600px;
+        height: auto;
+        overflow: hidden;
+        padding: 50px; 
+        box-sizing: border-box;
+        background-color: #7c1313;
+    }
+
+    #div_form h1 {
+        font-size: 2em;
+        font-weight: bold;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+
+    .div_input{
+        width: 300px;
+        height: 60px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        font-size: 1.2em;
+    }
+
+    .inputs {
+        width: 300px;
+        height: 30px;
+        font-size: 1.0em;
+    }
+
+    .text_area_input {
+        width: 600px;
+        margin-bottom: 20px;
+        font-size: 1.2em;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .text_area_input textarea {
+        width: 600px;
+        resize: none;
+    }
+
+    .submit_input, .submit_input input {
+        width: 70px;
+        height: 30px;
+        margin-top: 20px;
+        box-sizing: border-box;
+        background-color: #edc4b3;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .submit_input input {
+        margin-top: 0px;
+    }
+
+    footer {
+        width: 100%;
+        height: 100px;
+        background-color: #edc4b3;
+    }
+    #rodape{
+        width: 1200px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #div_sistema_interno {
+        width: 200px;
+        height: 30px;
+        margin-top: 37.5px;
+        margin-left: 60px;
+        font-size: 1.2em;
+        line-height: 1.2em;
+        text-align: center;
+        float: left;
+        border: solid 2px #7c1313;
+        background-color: #7c1313;
+        box-sizing: border-box;
+    }
+
+    #div_sistema_interno:hover {
+        background-color: rgba(26, 29, 18, 0.5);
+    }
+
+    #endereco_padokaEndereco {
+        width: 480px;
+        height: 30px;
+        margin-top: 60px;
+        margin-left: 60px;
+        font-size: 1.2em;
+        line-height: 1.2em;
+        text-align: center;
+        float: left;
+    }
+
+    #app {
+        width: 280px;
+        height: 75px;
+        margin-top: 12.5px;
+        margin-left: 60px;
+        box-sizing: border-box;
+        font-size: 1.2em;
+        line-height: 1.2em;
+        text-align: center;
+        float: left;
+    }
+
+    #app_imagem {
+        width: 75px;
+        height: 75px;
+        margin-left: 10px;
+        float: left;
+        background-image: url(../imagens/icone_android.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #app_download {
+        width: 175px;
+        height: 50px;
+        margin-top: 15px;
+        margin-left: 10px;
+        float: left;
+        text-align: center;
+        color: #2aa324;
+        border: solid 2px #2aa324;
+        padding-top: 10px;
+        box-sizing: border-box;
+        background-color: #ffffff;
+    }
+}
+
+@media screen and (max-device-width:780px){
+    body{
+        background-color: #000000;
+    }
+    #section_header {
+        width: 360px;
+        height: 90px;
+        position: fixed;
+        z-index: 999;
+        background-color: #ffffff;
+        border-bottom: 2px solid #000000;
+    }
+
+    #div_header {
+        width: 100%;
+        height: inherit;
+        margin-right: auto;
+        margin-left: auto;
+        box-sizing: border-box;
+    }
+
+    #logo img{
+        display: none;
+    }
+
+    #menu {
+        min-width: 100%;
+        width: auto;
+        height: 80px;
+        box-sizing: border-box;
+        margin-right: 30px;
+        float: left;
+        display: none;
+    }
+
+    .itens_do_menu {
+        min-width: 80px;
+        width: auto;
+        height: 80px;
+        margin-left: 5px;
+        padding-top: 30px;
+        padding-left: 5px;
+        padding-right: 5px;
+        box-sizing: border-box;
+        float: left;
+        font-size: 1em;
+        line-height: 1em;
+        text-align: center;
+        display: none;
+    }
+
+    .itens_do_menu:hover {
+        background-color: #edc4b3;
+    }
+
+
+    #div_menu_mobile {
+        width: 100%;
+        height: 60px;
+        position: fixed;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #menu_mobile_icone {
+        width: 50px;
+        height: 50px;
+        margin-top: 10px;
+        margin-left: 10px;
+        background-image: url(../imagens/menu.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #logo_mobile{
+        width: 100px;
+        height: 60px;
+        background-image: url(../imagens/logo.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        margin-left: 80px;
+    }
+
+    #menu_mobile {
+        width: 100%;
+        height: 100%;
+        margin-top: 200px;
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.9);
+        z-index: 999;
+        display: none;
+    }
+
+    .item_menu_mobile {
+        width: 100%;
+        height: 50px;
+        background-color: #9d6b53;
+    }
+
+    .item_menu_mobile a {
+        text-align: center;
+        box-sizing: border-box;
+        padding-top: 3px;
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    #divs_login {
+        width: 360px;
+        height: 50px;
+        margin-top: 20px;
+        float: left;
+        display: none;
+    }
+
+    #div_usuario {
+        width: 150px;
+        height: 50px;
+        float: left;
+    }
+
+    #div_senha {
+        width: 150px;
+        height: 50px;
+        margin-left: 10px;
+        float: left;
+    }
+
+    #usuario_nome_texto {
+        width: 150px;
+        height: 25px;
+        font-size: 1.2em;
+        line-height: 1.2em;
+    }
+
+    #senha_texto {
+        width: 150px;
+        height: 25px;
+        font-size: 1.2em;
+        line-height: 1.2em;
+    }
+
+    #usuario_campo, #usuario_campo input {
+        width: 100%;
+        height: 25px;
+        box-sizing: border-box;
+    }
+
+    #senha_campo, #senha_campo input {
+        width: 100%;
+        height: 25px;
+        box-sizing: border-box;
+    }
+
+    .div_button {
+        width: 35px;
+        height: 25px;
+        margin-top: 25px;
+        margin-left: 5px;
+        float: left;
+    }
+
+    .submit_button {
+        width: 35px;
+        height: 25px;
+    }
+
+    #div_conteudo_paginas {
+        width: 360px;
+        min-height: 400px;
+        height: auto;
+        box-sizing: border-box;
+        padding-top: 100px;
+    }
+
+    #div_secao_de_conteudo {
+        width: 100%;
+        min-height: 800px;
+        height: auto;
+        box-sizing: border-box;
+        overflow: hidden;
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    #div_slider {
+        display: none;
+    }
+
+    #div_imagens_slide {
+        display: flex;
+        width: 1200px;
+        height: 400px;
+        overflow: hidden;
+    }
+
+    .slider_imagens {
+        width: 1200px;
+        height: 400px;
+        display: none;
+    }
+
+    #menu_lateral{
+        display: none;
+    }
+
+    #div_redes_sociais {
+        width: 50px;
+        height: 150px;
+        margin-left: 1205px;
+        box-sizing: border-box;
+        position: fixed;
+        display: none;
+    }
+
+    .div_rede_social_imagem, .div_rede_social_imagem img {
+        width: 50px;
+        height: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px;
+    }
+
+    #div_produtos {
+        width: 100%;
+        min-height: 800px;
+        height: auto;
+        box-sizing: border-box;
+        padding-top: 50px;
+        overflow: hidden;
+    }
+
+    .produto_card{
+        width: 90%;
+        height: 470px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 10px;
+        box-sizing: border-box;
+        background-color: #edc4b3;
+        margin-bottom: 10px;
+    }
+
+    .card_imagem, .produto_card img  {
+        width: 320px;
+        height: 240px;
+    }
+
+    .produto_card img{
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+    }
+
+    .infos_card {
+        width: 100%;
+        height: 220px;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .texto_infos {
+        width: 100%;
+        height: 150px;
+        font-size: 1.2em;
+        line-height: 1.2em;
+    }
+
+    .detalhes_texto {
+        width: 100%;
+        height: 50px;
+        box-sizing: border-box;
+        padding-top: 15px;
+        font-size: 1.2em;
+        line-height: 1.2em;
+        text-align: center;
+    }
+
+    #div_sobre_conteudo {
+        width: 100%;
+        min-height: 500px;
+        height: auto;
+        box-sizing: border-box;
+        padding: 10px;
+        background-color: #000000;
+    }
+
+    .sobre_imagens, .sobre_imagens img {
+        width: 90%;
+        height: 260px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+    }
+
+    .sobre_titulos {
+        font-size: 2.0em;
+        font-weight: bold;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    #div_promocoes_conteudo{
+        width: 100%;
+        min-height: 800px;
+        box-sizing: border-box;
+        overflow: hidden;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 100px;
+        background-color: rgba( 140, 77, 34, 0.6);
+    }
+
+    .produto_promocao_card {
+        width: 100%;
+        height: 460px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .div_imagem_promocao, .div_imagem_promocao img {
+        width: 340px;
+        height: 180px;
+    }
+
+    .promocoes_infos {
+        width: 340px;
+        height: 180px;
+        box-sizing: border-box;
+        padding: 20px;
+        background-color: #ffffff;
+    }
+
+    .nome_produto_promocao {
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 2em;
+        font-weight: bold;
+    }
+
+    .preco_antigo {
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 1.8em;
+        font-weight: bold;
+        text-decoration: line-through;
+        color: #b42121;
+    }
+
+    .preco_promocao {
+        text-align: center;
+        font-size: 1.8em;
+        font-weight: bold;
+        color: #10b107;
+    }
+
+    #div_destaque {
+        width: 320px;
+        height: 240px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+
+    #div_destaque img {
+        width: 320px;
+        height: 240px;
+    }
+
+    #destaque_texto {
+        width: 340px;
+        min-height: 100px;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #destaque_texto h1 {
+        font-size: 3em;
+        font-weight: bold;
+        margin-bottom: 25px;
+    }
+
+    #destaque_texto p {
+        font-size: 2em;
+        line-height: 1.3em;
+        margin-bottom: 50px;
+    }
+
+    #div_curiosidades {
+        width: 100%;
+        min-height: 100px;
+        box-sizing: border-box;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 50px;
+        padding-bottom: 25px;
+    }
+
+    #div_curiosidades h1 {
+        box-sizing: border-box;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 3em;
+        font-weight: bold;
+        margin-bottom: 50px;
+    }
+
+    #div_curiosidades h2 {
+        box-sizing: border-box;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 2em;
+        font-weight: bold;
+        margin-bottom: 25px;
+    }
+
+    #div_curiosidades p {
+        box-sizing: border-box;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 1.4em;
+        line-height: 1.2em;
+        margin-bottom: 25px;
+    }
+
+    .imagens_curiosidades {
+        width: 320px;
+        height: 240px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 25px;
+    }
+
+    .imagens_curiosidades img {
+        width: 320px;
+        height: 240px;
+    }
+
+    #div_lojas {
+        width: 100%;
+        min-height: 200px;
+        height: auto;
+        box-sizing: border-box;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 100px;
+        background-color: #2f0606;
+    }
+
+    #div_lojas h1 {
+        font-size: 2.2em;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .lojas_card {
+        width: 95%;
+        min-height: 340px;
+        height: auto;
+        box-sizing: border-box;
+        padding-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+    }
+
+    .infos_loja {
+        width: 100%;
+        min-height: 300px;
+        height: auto;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+
+    .loja_nome {
+        font-size: 1.6em;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .loja_endereco {
+        font-size: 1.6em;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .loja_texto {
+        font-size: 1.3em;
+        line-height: 1em;
+    }
+
+    .div_imagem_loja {
+        width: 320px;
+        height: 240px;
+        margin-left: auto;
+        margin-right: auto;
+        box-sizing: border-box;
+    }
+
+    .div_imagem_loja img {
+        width: 320px;
+        height: 240px;
+    }
+
+    #div_form {
+        width: 100%;
+        min-height: 600px;
+        height: auto;
+        box-sizing: border-box;
+        padding: 20px; 
+        background-color: #7c1313;
+    }
+
+    #div_form h1 {
+        font-size: 2em;
+        font-weight: bold;
+        margin-bottom: 25px;
+    }
+
+    .div_input{
+        width: 300px;
+        height: 60px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        font-size: 1.2em;
+    }
+
+    .inputs {
+        width: 300px;
+        height: 30px;
+        font-size: 1.0em;
+    }
+
+    .text_area_input {
+        width: 300px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        font-size: 1.2em;
+    }
+
+    .text_area_input textarea {
+        resize: none;
+    }
+
+    .submit_input, .submit_input input {
+        width: 70px;
+        height: 30px;
+        margin-top: 20px;
+        box-sizing: border-box;
+        background-color: #edc4b3;
+        border: 1px solid black;
+    }
+
+    .submit_input input {
+        margin-top: 0px;
+    }
+
+    footer {
+        width: 100%;
+        height: 90px;
+        box-sizing: border-box;
+        padding-top: 4px;
+        margin-top: 20px;
+        background-color: #edc4b3;
+    }
+
+    #div_sistema_interno {
+        width: 200px;
+        height: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 4px;
+        font-size: 1.2em;
+        line-height: 1.2em;
+        text-align: center;
+    }
+
+    #endereco_padokaEndereco {
+        width: 90%;
+        height: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 4px;
+        font-size: 1.2em;
+        line-height: 1.2em;
+        text-align: center;
+    }
+
+    #app {
+        width: 90%;
+        height: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        box-sizing: border-box;
+        font-size: 1.2em;
+        line-height: 1.2em;
+        text-align: center;
+    }
+
+    #app_imagem {
+        width: 40px;
+        height: 40px;
+        margin-left: 10px;
+        float: left;
+    }
+
+    #app_download {
+        width: 175px;
+        height: 40px;
+        margin-left: 10px;
+        float: left;
+        text-align: center;
+        display: none;
+    }
+}
